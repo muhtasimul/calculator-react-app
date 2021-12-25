@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+.container{
+  display: flex;
+  height:90vh;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+
+}
+
+.calculator{
+  display: grid;
+  grid-template-areas: 
+    "display display display display"
+    "button button button button"
+    "button button button button"
+    "button button button button"
+    "button button button button"
+  ;
+
+}
+
+.calculator-display{
+  grid-area: display;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 4em;
+  background: hsl(230, 8%, 96%);
+  margin: 2px;
+}
+
+.form{
+  grid-area: button;
+  height: 70vh;
+  
+}
+
+.form button{
+  width: 100px;
+  height: 103px;
+  background-color: hsl(220, 8%, 91%);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  margin: 2px;
+  border-style: none;
+  color:hsla(274, 3%, 9%,0.8)
+}
+
+@media (max-width:500px){
+  .container{
+    transform: scale(.5);
+  }
+}
