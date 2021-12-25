@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+React JS Calculator App
+
+This is a calculator app create using React Js
+
+
+#React README instructions
+
+ Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
