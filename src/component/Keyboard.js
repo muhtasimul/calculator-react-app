@@ -30,7 +30,10 @@ export default function Keyboard() {
         <div className="container">
             <div>
                 <div className="calculator">
-                    <div className="calculator-display">
+                    <div 
+                        className="calculator-display"
+                        data-testid='display'
+                        >
 
                         {
                             calculatedValue === 0 ?
@@ -44,11 +47,13 @@ export default function Keyboard() {
         
                 <form className="form">
                     <button
+                        data-testid = "button-value-1"
                         value="1"
                         onClick={inputValue}
                     >1</button>
 
                     <button
+                        data-testid = "button-value-2"
                         value="2"
                         onClick={inputValue}
                     >2</button>
@@ -57,6 +62,7 @@ export default function Keyboard() {
                         onClick={inputValue}
                     >3</button>
                     <button
+                        data-testid="plus"
                         value="+"
                         onClick={inputValue}
                     >+</button>
@@ -98,6 +104,7 @@ export default function Keyboard() {
                     <br />
                     <button
                         onClick={totalValue}
+                        data-testid="equal"
                     >
                         =
                     </button>
@@ -106,6 +113,7 @@ export default function Keyboard() {
                         onClick={inputValue}
                     >0</button>
                     <button
+                        data-testid='clear'
                         onClick={clearValue}
                     >CE</button>
                     <button>/</button>
